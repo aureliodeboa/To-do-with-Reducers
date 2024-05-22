@@ -8,7 +8,7 @@ const Page = () =>{
 
   const [list, dispatch] = useReducer(listReducer, []); // uso o useReducer (tenho que colocar o dispatch), e no useRecudcer(o tipo da lista, lista inical)
   const [addField,setaddField]= useState('');
-  const [editField,seteditField] = useState('')
+  
 
   const handleAddClick= () => {
     if(addField.trim()=== '') return false;
