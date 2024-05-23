@@ -1,3 +1,8 @@
 import { createContext } from "react";
-export const CountInitialData= 150;
-export const CountContext = createContext(CountInitialData);
+
+type CountContextType = {
+    onlineCount: number;
+    setonlineCount: (n:number)=>void;
+}
+
+export const CountContext = createContext<CountContextType | null>(null);
