@@ -82,7 +82,7 @@ const Page = () =>{
             className="flex  items-center p-3 my-3 border-b border-gray-700"
             key={item.id}>
           
-           <input
+           <input title="title"
             className="w-6 h-6 mr-4"
             type="checkbox"
             defaultChecked={item.done}
@@ -90,10 +90,10 @@ const Page = () =>{
             />
            <p  className="flex-1 text-lg" > {item.text} </p>
 
-           <button className="mx-4 bg-yellow-400 m-2 rounded-sm  " 
+           <button className="mx-4 bg-yellow-400 m-2 rounded-sm p-1 " 
             title="editar" onClick={()=>handleEditlist(item.id)}> Editar
            </button>
-           <button className="mx-4 bg-red-400 m-2 rounded-sm  " 
+           <button className="mx-4 bg-red-400 m-2 rounded-sm p-1 " 
              title="Deletar" onClick={()=>handleRemovelist(item.id)}> Excluir
            </button>
 
